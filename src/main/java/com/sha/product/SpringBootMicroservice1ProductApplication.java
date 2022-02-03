@@ -8,7 +8,7 @@ import org.springframework.context.annotation.PropertySource;
 import java.security.Security;
 
 @SpringBootApplication(exclude= SecurityAutoConfiguration.class)
-@PropertySource("classpath:application-default.properties")
+@PropertySource("classpath:application-production.properties")
 public class SpringBootMicroservice1ProductApplication {
 
 	public static void main(String[] args) {
