@@ -1,1 +1,2 @@
-web: java -Dspring.profiles.active=production --port $PORT -jar build/libs/*.jar
+web: java -jar build/server/webapp-runner-*.jar --port $PORT -Dspring.profiles.active=production build/libs/*.war
+
