@@ -1,2 +1,2 @@
-web: java -Dspring.profiles.active=production -Dserver.port=$PORT -jar app.jar
+web: java -Dspring.profiles.active=production -Dserver.port=$PORT -jar build/libs/*.jar
 
