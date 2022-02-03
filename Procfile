@@ -1,1 +1,1 @@
-web: java -Dspring.profiles.active=production -Dserver.port=3000 -jar build/libs/*.jar
+web: java -Dspring.profiles.active=production --port $PORT -jar build/libs/*.jar
