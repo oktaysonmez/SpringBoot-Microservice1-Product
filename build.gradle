@@ -39,8 +39,7 @@ tasks.named('test') {
 jar {
 	manifest {
 		attributes(
-				'Class-Path': configurations.compile.collect { it.getName() }.join(' '),
-				'Main-Class': 'SpringBootMicroservice1ProductApplication.main'
+				'Main-Class': 'com.sha.product.SpringBootMicroservice1ProductApplication.main'
 		)
 	}
 }
