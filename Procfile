@@ -1,1 +1,2 @@
-web: java -Dspring.profiles.active=production -Dserver.port=$PORT -Xmx300m -Xss512k -XX:CICompilerCount=2 -jar build/libs/*.jar
+web: java -Dspring.profiles.active=production -Dserver.port=$PORT -jar build/libs/*.jar
+web: java $JAVA_OPTS -cp target/classes:target/dependency/* com.sha.product.SpringBootMicroservice1ProductApplication
