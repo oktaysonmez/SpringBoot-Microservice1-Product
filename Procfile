@@ -1,2 +1,2 @@
 web: java -Dspring.profiles.active=production -Dserver.port=$PORT -jar build/libs/*.jar
-web: java $JAVA_OPTS -cp build/classes:build/dependency/* com.sha.product.SpringBootMicroservice1ProductApplication
+web: node index.js
