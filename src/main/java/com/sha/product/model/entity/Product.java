@@ -30,6 +30,6 @@ public class Product extends Entity<Integer>
     private Double price;
 
     @Temporal(TemporalType.DATE)
-    @Column(nullable = false)
+    @Column(nullable = false,columnDefinition="TIMESTAMP DEFAULT CURRENT_TIMESTAMP")
     private Date created;
 }
