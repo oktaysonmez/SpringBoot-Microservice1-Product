@@ -1,7 +1,6 @@
 package com.sha.product.model.entity;
 
 import lombok.Data;
-import org.hibernate.annotations.ColumnDefault;
 
 import javax.persistence.*;
 import java.util.Date;
@@ -31,7 +30,6 @@ public class Product extends Entity<Integer>
     private Double price;
 
     @Temporal(TemporalType.DATE)
-    @ColumnDefault(value = "CURRENT_TIMESTAMP" )
-    @Column(nullable = false)
+    @Column(nullable = false,columnDefinition = "DATE DEFAULT SYSDATE")
     private Date created;
 }
