@@ -30,7 +30,6 @@ public class Product extends Entity<Integer>
     private Double price;
 
     @Temporal(TemporalType.DATE)
-    @Column(nullable = false,
-            columnDefinition="DATE default CURRENT_DATE on update CURRENT_DATE")
-    private Date created = new Date();
+    @Column(nullable = false)
+    private Date created;
 }
